@@ -1,0 +1,22 @@
+{   "manifest_version": 3,
+    "name": "Hate and Toxic text detector",
+    "description": "Best extension",
+    "version": "1.0",
+    "icons": {
+        "128": "logo.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "host_permissions": ["http://localhost:3000/"],
+    "permissions":[
+        "activeTab",
+        "scripting"
+    ],
+    "web_accessible_resources":[{
+        "resources":["popup.js"],
+        "matches":["http://*/*","https://*/*"]
+    }
+        
+    ]
+}
